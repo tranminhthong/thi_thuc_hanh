@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3</title>
+</head>
+<body>
+<script>
+    let x = +parseInt(prompt())
+
+    function isFibonacci(x) {
+        let a = 1, b = 0, temp;
+        let n = 0
+        while (n >= 0) {
+            temp = a;
+            a = a + b;
+            b = temp;
+            if (x === b) {
+                alert("true");
+                break;
+            } else {
+                if (b > x) {
+                    alert("false");
+                    break;
+                }
+            }
+            n++;
+        }
+    }
+
+    isFibonacci(x)
+
+</script>
+</body>
+</html>
